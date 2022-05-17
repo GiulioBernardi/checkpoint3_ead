@@ -19,10 +19,13 @@ public class Main {
         System.out.println("======================Lista de produtos com valor maior do que 100======================");
         produtoService.listarPorValor(100.00).forEach(System.out::println);
 
+        System.out.println("======================Lista produtos juntamente com os dados do boleto======================");
+        pedidoService.listarPedidoComBoleto().forEach(System.out::println);
+
+        System.out.println("======================Lista produtos com nomes que começam com 'C'======================");
         produtoService.listarPorNomeParecido("C").forEach(System.out::println);
 
+        System.out.println("======================Lista produtos que tenham o preço igual a 15 reais======================");
         produtoService.listarBuscandoPorValor(15).forEach(System.out::println);
-
-        pedidoService.listarPedidoComBoleto().forEach(System.out::println);
     }
 }

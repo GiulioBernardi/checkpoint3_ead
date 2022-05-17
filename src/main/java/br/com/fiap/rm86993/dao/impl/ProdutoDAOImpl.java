@@ -1,6 +1,5 @@
 package br.com.fiap.rm86993.dao.impl;
 
-import br.com.fiap.rm86993.entity.Pedido;
 import br.com.fiap.rm86993.entity.Produto;
 
 import javax.persistence.EntityManager;
